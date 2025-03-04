@@ -1,6 +1,6 @@
 ﻿public class Program {
     public static double Average(int[] arr) {
-        double result = 0;
+        double result = 0.0;
         if (arr.Length == 0) return result;
 
         foreach (int i in arr)
@@ -8,7 +8,7 @@
             result += i;
         }
 
-        return 1.0 * result / arr.Length;
+        return result / arr.Length;
     }
 
     public static void Main(string[] args)
